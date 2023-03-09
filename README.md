@@ -1,11 +1,11 @@
-About pyiron_ontology
-=====================
+About pyiron_ontology-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_ontology-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyiron/pyiron_ontology
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_ontology-feedstock/blob/main/LICENSE.txt)
 
 Summary: pyiron_ontology - module extension to pyiron.
 
