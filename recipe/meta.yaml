@@ -1,6 +1,6 @@
 {% set name = "pyiron_ontology" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "da085398835e85c07c5d786aab5eb9e47fb13064c9ee294829a32af418092930" %}
+{% set version = "0.1.3" %}
+{% set sha256 = "614c13efa52db7e7d482bc1d1b9329ba2439b596dd4ff1ea16c56233c17e7d71" %}
 
 package:
   name: {{ name|lower }}
