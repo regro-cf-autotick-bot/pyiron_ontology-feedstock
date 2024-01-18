@@ -1,6 +1,5 @@
 {% set name = "pyiron_ontology" %}
-{% set version = "0.1.3" %}
-{% set sha256 = "614c13efa52db7e7d482bc1d1b9329ba2439b596dd4ff1ea16c56233c17e7d71" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_ontology-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 736767d079921474392750cc7278f4a62317c16d5059499212a91c9a6320518c
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
@@ -21,12 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy
-    - openjdk
-    - owlready2
-    - pandas
-    - pint
-    - pyiron_atomistics >=0.2.63
+    - numpy >=1.26.3
+    - owlready2 >=0.45
+    - openjdk  # required by owlready2
+    - pandas >=2.1.4
+    - pint >=0.23
 
 test:
   imports:
