@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_ontology-{{ version }}.tar.gz
   sha256: c3525f1f8c0892a25afbf1e1b84988a0469a9765f3a2773c202162d308709ab5
+  patches:
+    - versioneer.patch
 
 build:
   noarch: python
