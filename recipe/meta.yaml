@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.9
     - pip
-    - versioneer ==0.29
+    - versioneer
     - toml
     - numpy
     - owlready2
