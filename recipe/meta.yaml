@@ -20,6 +20,10 @@ requirements:
     - pip
     - versioneer ==0.29
     - toml
+    - numpy
+    - owlready2
+    - pandas
+    - pint
   run:
     - python >=3.9,<3.13
     - numpy >=1.26.3,<1.27.0
